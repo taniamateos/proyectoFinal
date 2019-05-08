@@ -11,18 +11,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Iniciar sesion</title>
+        <link rel="stylesheet" href="../css/estilos.css" type="text/css"></link>
     </head>
     <body>
-        <h1>Iniciar sesion</h1>
-        <p><a href="register.jsp">Registrarse</a></p>
-        
-        <%-- Mostramos los errores, guardados en la variable de sesión --%>
-        <p style="color: #ff0000">${sessionScope['error']}</p>
-        
-        <form action="${pageContext.request.contextPath}/servlets/Login" method="POST">
-            <p> Usuario: <input type="text" name="usuario"></p>
-            <p> Contraseña: <input type="password" name="password"></p>
-            <p><input type="submit" value="Entrar"></p>
-        </form>
+        <h1>¡ENTRA YA!</h1>
+        <h2>Aquí podrás acceder a información muy interesante sobre el IDE Eclipse</h2>
+       
+        <div class="formulario">
+        	<h3>Iniciar sesión</h3>
+        	<form action="${pageContext.request.contextPath}/servlets/Login" method="POST">
+            	<p> Usuario: <input type="text" name="usuario"></p>
+           		<p> Contraseña: <input type="password" class="contra" name="password"></p>
+            	 <%-- Mostramos los errores, guardados en la variable de sesión --%>
+        <p class="error">${sessionScope['error']}</p>
+            	<p><input type="submit" id="acceder" value="Acceder"></p>
+        	</form>
+        	<p class="enlaces"><a href="register.jsp">Registrarse</a></p>
+        </div>
     </body>
 </html>

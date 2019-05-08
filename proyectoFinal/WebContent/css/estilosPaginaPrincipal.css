@@ -1,0 +1,18 @@
+h2{
+	text-align:center;
+	font-style:cursive;
+	position:absolute;
+	left:20px;
+	font-size:1.2em;
+}
+
+form{
+	position:absolute;
+	right:20px;	
+}
+
+input{
+	background-color:white;
+	border:0px;
+	font-weight:bold;
+}

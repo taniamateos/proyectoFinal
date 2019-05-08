@@ -1,0 +1,131 @@
+body{
+	background-color:#e6f2ff;
+}
+
+h1,h2{
+	text-align:center;
+	width:100%;
+}
+
+h2{
+	color:#737373;
+}
+
+h3{
+	color:#99ccff;
+	text-align:center;
+}
+
+.formulario{
+	border:2px solid white;
+	border-radius:3%;
+	width:250px;
+	padding-left:20px;
+	padding-right:20px;
+	box-shadow: 5px 5px 5px #999;
+	background-color:white;
+	margin:0 auto;
+}
+
+.formularioDos{
+	border:2px solid white;
+	border-radius:3%;
+	width:350px;
+	padding-left:20px;
+	padding-right:20px;
+	box-shadow: 5px 5px 5px #999;
+	background-color:white;
+	margin:0 auto;
+	height:400px;
+}
+
+.contra{
+	margin-bottom:10px;
+}
+
+@media only screen and (min-width: 200px) {
+	.formulario{
+		width:400px;
+		font-size:1.5em;
+		height:410px;
+	}
+	
+	.formularioDos{
+		width:400px;	
+		font-size:1.2em;	
+		height:450px;
+		
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	.formulario{
+		width:300px;
+		font-size:1em;
+		height:260px;
+	}
+		.formularioDos{
+		width:400px;	
+		font-size:1em;	
+		height:420px;
+		
+	}
+}
+
+input[type="text"]{
+	width:100px;
+}
+
+input{
+	color:black;
+	background-color:white;
+	border:0px;
+	border-bottom:1px solid lightblue;
+}
+
+input[type="password"]{
+	width:150px;
+}
+
+input[type="email"]{
+	width:200px;
+}
+
+input[type="submit"]{
+	border:0px;
+	background-color:lightblue;
+	padding:5px;
+	width:100%;
+	margin:0 auto;
+	color:white;
+}
+
+input[type="submit"]:hover{
+	background-color:#66b3ff;
+}
+
+.enlaces{
+	background-color:white;
+	padding-top:3px;
+	padding-bottom:3px;
+	width:100%;
+	text-align:center;
+	border:1px solid lightblue;
+}
+
+.enlaces:hover{
+	border:1px solid #66b3ff;
+}
+
+.enlaces:hover a{
+	color:#66b3ff;
+}
+a{
+	text-decoration:none;
+	color:lightblue;
+}
+
+.error{
+	color:#ff6666;
+	height:10px;
+}

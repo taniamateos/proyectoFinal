@@ -76,7 +76,7 @@ public class Login extends HttpServlet {
 	                variableSesion.setAttribute("sessionusuario", usuario);                           
                 }else {
                 	//Si no existe el usuario
-                	variableSesion.setAttribute("error", "No existe ese usuario con esa contraseña,"+ contraseña);
+                	variableSesion.setAttribute("error", "No existe ese usuario con esa contraseña");
                 }
                 
                 //Si el usuario no existe, se desconecta de la base de datos

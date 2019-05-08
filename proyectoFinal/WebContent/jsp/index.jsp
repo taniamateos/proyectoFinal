@@ -5,11 +5,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registrarse</title>
+        <link rel="stylesheet" href="../css/estilosPaginaPrincipal.css" type="text/css"></link>
     </head>
     <body>
-        <h1>Bienvenido/a ${sessionScope['sessionusuario']}</h1>
+    	<div class="encabezado">
+        <h2>Bienvenido/a ${sessionScope['sessionusuario']}</h2>
         <form action="${pageContext.request.contextPath}/servlets/Logout" method="post">
-            <p><input type="submit" value="Salir"></p>
+            <p><input type="submit" value="Cerrar sesión"></p>
         </form>
     </body>
 </html>
