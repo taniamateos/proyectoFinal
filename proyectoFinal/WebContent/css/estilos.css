@@ -1,5 +1,5 @@
 body{
-	background-color:#e6f2ff;
+	background-color:#cce5ff;
 }
 
 h1,h2{
@@ -7,12 +7,16 @@ h1,h2{
 	width:100%;
 }
 
+h1{
+	color:#ff0066;
+}
+
 h2{
-	color:#737373;
+	color:#ff80b3;
 }
 
 h3{
-	color:#99ccff;
+	color:#3ca1c3;
 	text-align:center;
 }
 
@@ -22,7 +26,7 @@ h3{
 	width:250px;
 	padding-left:20px;
 	padding-right:20px;
-	box-shadow: 5px 5px 5px #999;
+	box-shadow: 5px 5px 5px #ff0066;
 	background-color:white;
 	margin:0 auto;
 }
@@ -33,10 +37,14 @@ h3{
 	width:350px;
 	padding-left:20px;
 	padding-right:20px;
-	box-shadow: 5px 5px 5px #999;
+	box-shadow: 5px 5px 5px #ff0066;
 	background-color:white;
 	margin:0 auto;
 	height:400px;
+}
+
+p{
+color:#ff0066;
 }
 
 .contra{
@@ -93,7 +101,7 @@ input[type="email"]{
 
 input[type="submit"]{
 	border:0px;
-	background-color:lightblue;
+	background-color:#3ca1c3;
 	padding:5px;
 	width:100%;
 	margin:0 auto;
@@ -122,7 +130,7 @@ input[type="submit"]:hover{
 }
 a{
 	text-decoration:none;
-	color:lightblue;
+	color:#3ca1c3;
 }
 
 .error{

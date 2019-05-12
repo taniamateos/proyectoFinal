@@ -1,5 +1,8 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<c:if test="${sessionScope['sessionusuario']==null}">
+    <% response.sendRedirect("login.jsp");%>
+</c:if>
 <!DOCTYPE html>
 <html>
     <head>
@@ -267,7 +270,7 @@
 		<div class="cuerpo">
 		<h4>Plugins interesantes para el IDE Eclipse</h4>
 		
-		<p><b>EGit</b></p>
+		<h5><b>EGit</b></h5>
 		<p>Para poder integrar el repositorio Git al IDE Eclipse, se necesita este Plugin. El Git, como mencionaba con anterioridad, es un sistema de control de versiones. Esto quiere decir, que te guarda todas las versiones que tienes del proyecto. Este plugin te permite hacer consultas al historial de versiones de manera más rápida.</p>
 		<div class="container">
 			<form>
@@ -275,7 +278,7 @@
 			</form>
 		</div>
 		
-		<p><b>ECobertura</b></p>
+		<h5><b>ECobertura</b></h5>
 		<p> Este Plugin es una herramienta de informes de cobertura de código Java. Te permite inciar tus aplicaciones y ver lo que está cubierto en ese momento y lo que no, desde Eclipse. Se distinguen por colores. Esto quiere decir, que comparas el código que ya tenías examinado, con el nuevo código, y te proporciona los resultados de la cobertura. Te dice que errores hay en el nuevo código. Ejemplo: variables que declaras y no usas</p>
 		<div class="container">
 			<form>
@@ -283,7 +286,7 @@
 			</form>
 		</div>
 		
-		<p><b>SonarLint</b></p>
+		<h5><b>SonarLint</b></h5>
 		<p> Este Plugin, te ayuda a detectar y solucionar problemas de calidad a medida que escribes código. Funciona igual que un corrector ortográfico. Antes de evaluar el código, pasas esta herramienta, y te dice si los test Unitarios son correctos o no.</p>
 		<div class="container">
 			<form>
@@ -291,7 +294,7 @@
 			</form>
 		</div>
 		
-		<p><b>Spring Tools</b></p>
+		<h5><b>Spring Tools</b></h5>
 		<p>Te permite interpretar el código funete basado en Spring Boot y poder navegar por la aplicación sin problema.</p>
 		<div class="container">
 			<form>
